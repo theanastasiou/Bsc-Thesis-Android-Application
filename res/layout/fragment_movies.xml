@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+
+    <com.kofigyan.stateprogressbar.StateProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/state"
+        app:spb_currentStateNumber="one"
+        app:spb_stateBackgroundColor="@color/Black"
+        app:spb_stateForegroundColor="@color/colorAccent"
+        app:spb_stateNumberBackgroundColor="@color/WhiteSmoke"
+        app:spb_stateNumberForegroundColor="@color/WhiteSmoke"
+        app:spb_currentStateDescriptionColor="@color/colorAccent"
+        app:spb_stateDescriptionColor="@color/Black"
+        app:spb_maxStateNumber="two"
+        android:layout_marginTop="58dp"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="242dp"
+        android:layout_below="@+id/state"
+        android:layout_marginTop="56dp"
+        android:layout_height="wrap_content"
+        android:text="Select Category for Your Project" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="0dp" />
+
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="227dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="64dp"
+        android:background="@drawable/round_shape"
+        android:text="Next Step"
+        android:theme="@style/MyButton" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="226dp"
+        android:background="@drawable/round_shape"
+        android:backgroundTint="@color/colorAccent"
+        android:text="@android:string/cancel"
+        android:theme="@style/MyButton" />
+
+</RelativeLayout>
+
+
